@@ -1,0 +1,73 @@
+html {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  font-family: font-family: 'Zilla Slab', serif;
+  
+  background-image: url("card.jpg");
+  background-repeat: no-repeat;
+  
+  background-position: center; 
+  color: black;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  margin: 500px auto 400px;
+  
+ 
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+nav {
+  text-align: center;
+}
+
+img {
+  float: left;
+  margin-right: 10px;
+}
+
+a:link {
+  color: #61ce9c;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+
+h1 {
+  font-style: italic;
+  text-align: center;
+  font-size: 275%;
+}
+
+h2 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  text-align: left;
+  font-size: 190%;
+}
+
+p {
+  text-align:  left;
+  font-size: 23.85px;
+}
+
+
+
+  @media screen and (max-width: 800px){
+  body {
+    margin: auto;
+  }
+}
