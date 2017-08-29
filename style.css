@@ -36,12 +36,12 @@ nav {
   text-align: center;
 }
 
-.watermark {
+/*.watermark {
   z-index: 99;
   position: absolute;
   opacity: 0.2;
   margin: -4% 10% 10% -17.8%;
-}
+}*/
 
 .watermark:hover {
   border: 1px black dotted;
@@ -92,17 +92,17 @@ h3 {
 
 .bottom {
   font-size: 16px;
-  margin-top: 0
+  margin-top: 0;
 }
-
+/*
   @media screen and (max-width: 1450px){
     .watermark {
       display: none;
     }
 
-  }
+  }*/
 
-  @media screen and (min-width: 1600px){
+  @media screen and (min-width: 1700px){
 
 
   body {
@@ -130,6 +130,7 @@ h3 {
     align-items: center;
     /*background-color: blue;*/
   }
+
 
   /*.scroll {
     width: 60%;
