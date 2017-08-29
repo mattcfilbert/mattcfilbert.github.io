@@ -36,7 +36,18 @@ nav {
   text-align: center;
 }
 
-img {
+.watermark {
+  z-index: 99;
+  position: absolute;
+  opacity: 0.2;
+  margin: -4% 10% 10% -17.8%;
+}
+
+.watermark:hover {
+  border: 1px black dotted;
+}
+
+.sketch {
   float: left;
   margin-right: 10px;
   border: black, 5px;
@@ -84,6 +95,12 @@ h3 {
   margin-top: 0
 }
 
+  @media screen and (max-width: 1450px){
+    .watermark {
+      display: none;
+    }
+
+  }
 
   @media screen and (min-width: 1600px){
 
