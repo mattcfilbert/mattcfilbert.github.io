@@ -4,10 +4,11 @@ html {
   padding: 0;
 }
 
+
 body {
   font-family: font-family: 'Zilla Slab', serif;
-
-  background-image: url("card.jpg");
+  background-color: black;
+  background-image: url("img/card.jpg");
   background-repeat: no-repeat;
   background-position: top;
 
@@ -24,7 +25,6 @@ body {
   height: 500px;
   margin: 300px auto 400px;
 
-
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -39,6 +39,8 @@ nav {
 img {
   float: left;
   margin-right: 10px;
+  border: black, 5px;
+  border-style: solid;
 }
 
 a:link {
@@ -57,18 +59,142 @@ h1 {
 h2 {
   text-align: left;
   font-size: 190%;
-  font-family: 'Dancing Script', cursive; 
+  font-family: 'Dancing Script', cursive;
 }
 
 p {
   text-align:  left;
   font-size: 23.85px;
 }
+.foot {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+.bottom {
+  font-size: 16px;
+  margin-top: 0
+}
 
 
+  @media screen and (min-width: 1600px){
 
-  @media screen and (max-width: 800px){
+
   body {
-    margin: auto;
+    font-family: font-family: 'Zilla Slab', serif;
+
+    background-image: url("img/card.jpg");
+
+
+    background-size: cover;
+    color: black;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+
+  .container {
+    width: 50%;
+    height: 25%;
+    margin: 20% auto 15%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    /*background-color: blue;*/
+  }
+
+  /*.scroll {
+    width: 60%;
+    height: 45%;
+    margin: 20% auto 15%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    background-color: red;
+  }*/
+
+  nav {
+    text-align: center;
+  }
+
+
+  img {
+    float: left;
+    margin-right: 10px;
+  }
+
+  a:link {
+    color: #61ce9c;
+    font-weight: bold;
+    font-size: 120%;
+  }
+
+
+  h1 {
+    font-style: italic;
+    text-align: center;
+    font-size: 275%;
+  }
+
+  h2 {
+    font-family: 'Dancing Script', cursive;
+    text-align: left;
+    font-size: 190%;
+  }
+
+  p {
+    text-align:  left;
+    font-size: 23.85px;
+  }
+
+  footer {
+    height: 100px;
+  }
+
+  .tasteful {
+    text-decoration: underline;
+  }
+
+
+    /*@media screen and (max-width: 800px){
+    main {
+      margin: auto;
+      position: absolute;
+    }
+  }*/
+
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-image: none;
+        background-color: white;
+    }
+    .container {
+      width: 70%;
+      height: 70%;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      align-content: space-between;
+      align-items: center;
+      /*background-color: blue;*/
+    }
+    .web {
+      display: none;
+    }
 }
