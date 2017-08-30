@@ -32,6 +32,10 @@ body {
   align-items: center;
 }
 
+.hidden {
+  display: none;
+}
+
 nav {
   text-align: center;
 }
@@ -44,7 +48,9 @@ nav {
 }*/
 
 .watermark:hover {
-  border: 1px black dotted;
+  border: 1px black solid;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .sketch {

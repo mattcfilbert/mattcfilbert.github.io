@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
   <link rel="icon" href="img/sketch.png">
+
 </head>
 
 <body>
@@ -14,24 +15,65 @@
     <h1>Matt C. Filbert</h1>
 
     <nav>
+      <div id="projects">
 
-       <a href="https://github.com/mattcfilbert/">GitHub</a> |
-      <a class="web" href="img/Matt_filbert_resume.pdf">Résumé</a> <span class="web"> |</span>
+
+      <a href="https://github.com/mattcfilbert/">GitHub</a> |
+      <a href="img/Matt_filbert_resume.pdf">Résumé</a> <span class="web"> |</span>
       <a href="#">Projects</a>
+      </div>
+
+      <div id="show" class='hidden'>
+
+
+      <a href="#" id='goHome'>Home</a>
+      <br>
+      <a href="#" id='one'>SimonBoy COLOR</a> |
+      <a href="#" id='two'>crowd_sourcedCandidates</a> |
+      <a href="#" id='three'>dankMeme Generator</a>
+
+      </div>
 
 
       <hr>
     </nav>
   </header>
 
-  <main>
+  <main id='home'>
     <h2>A tasteful business card</h2>
     <img class="sketch" src="img/sketch.png" alt="sketch">
 
 
-    <p>Matt is a full-stack web developer in the DC area. He is a mediocre mandolinist, a competent rugby player, and a savant at making blueberry pancakes.</p>
+    <p>Matt is a <strong>full-stack web developer</strong> in the DC area. He is a mediocre mandolinist, a competent rugby player, and a savant at making blueberry pancakes.</p>
 
     <p>You can tell that he is super official and stuff because of his sweet, digital business card!</p>
+
+  </main>
+  <main id='proj1' class='hidden'>
+    <h2><a href="https://mattcfilbert.github.io/SimonBoy-Color/">SimonBoy COLOR</h2>
+    <img class="sketch" src="img/sbc.png" alt="SimonBoy COLOR"></a>
+
+
+    <p>SimonBoy COLOR is a silly romp of a pattern memorization game with a basic AI built with JS/jQuery, HTML, CSS, git, and a whole lotta heart!</p>
+
+    <p>SimonBoy COLOR's design is one of simple nostalgia, framed within the screen of a GameBoy COLOR.</p>
+
+  </main>
+  <main id='proj2' class='hidden'>
+    <a href="https://crowdsourced-candidates-va.herokuapp.com/"><h2>crowd_sourcedCandidates - Virginia</h2>
+    <img class="sketch" src="img/csc.png" alt="sketch"></a>
+
+    <p>crowd_sourcedCandidates is a full-stack app (with a Rails back-end and SQL database) that gives voters a greater voice in local elections, candidates a platform to share their message, and parties a data base of popular candidates and voting trends in elections that may fly below their radar.</p>
+
+  </main>
+  <main id='proj3' class='hidden'>
+    <h2>dankMeme Generator</h2>
+    <img class="sketch" src="img/dmg.png" alt="sketch">
+
+
+    <p>This full-stack app provides what no one asked for: another meme generator. I worked with a group to make this app filled with API-generated and user created jokes/images.</p>
+
+    <p>My role was to build the Angular front-end framework, set up the session storage, and to build the Rails back-end and SQL database.</p>
 
   </main>
   <div class="foot">
